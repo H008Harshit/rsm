@@ -7,7 +7,7 @@ const Search = () => {
   const searched_query = search?.search_query;
 
   const searched_data = data.filter((item, i) =>
-    item.brand_name.toLowerCase().includes(searched_query)
+    item?.brand_name?.toLowerCase()?.includes(searched_query?.toString())
   );
 
   console.log(searched_data);
@@ -22,7 +22,7 @@ const Search = () => {
       </div>
       <div className="flex flex-wrap gap-10">
         {searched_data.length>0 && searched_data.map((item, i) => (
-          <Link href={"/" + item.slug + "/detail"}>
+          <Link key={i} href={"/" + item.slug + "/detail"}>
             <div className="hover:underline w-[350px] mt-[20px]">
               <img
                 className="object-cover rounded-xl w-full h-[350px]"

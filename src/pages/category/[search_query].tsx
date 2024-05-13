@@ -8,7 +8,7 @@ const Search = () => {
   const searched_query  = search?.search_query;
 
   const searched_data = data.filter((item, i) =>
-    item?.brand_category?.toLowerCase()?.includes(searched_query.toString())
+    item?.brand_category?.toLowerCase()?.includes(searched_query?.toString())
   );
 
   console.log(searched_data);

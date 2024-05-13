@@ -1,6 +1,6 @@
 import as_logo from "../../public/data_images/TheActiveStory/logo.jpg"
 import as_prod1 from "../../public/data_images/TheActiveStory/product1.jpg"
-import as_prod2 from "../../public/data_images/TheActiveStory/product2.jpg"
+// import as_prod2 from "../../public/data_images/TheActiveStory/product2.jpg"
 import as_prod3 from "../../public/data_images/TheActiveStory/product3.jpg"
 import as_owner from "../../public/data_images/TheActiveStory/owner.jpeg"
 import tdss_logo from "../../public/data_images/TheDesiSwagStore/logo.jpeg"
@@ -27,20 +27,20 @@ import hu_prod3 from "../../public/data_images/HappinessUnwrapped/product3.jpeg"
 import hu_prod4 from "../../public/data_images/HappinessUnwrapped/product4.jpeg"
 import hu_owner from "../../public/data_images/HappinessUnwrapped/owner.jpeg"
 import vc_logo from "../../public/data_images/VaradaCreations/logo.jpg";
-import vc_prod1 from "../../public/data_images/VaradaCreations/product1.jpg"
-import vc_prod2 from "../../public/data_images/VaradaCreations/product2.jpg"
-import vc_prod3 from "../../public/data_images/VaradaCreations/product3.jpg"
+// import vc_prod1 from "../../public/data_images/VaradaCreations/product1.jpg"
+// import vc_prod2 from "../../public/data_images/VaradaCreations/product2.jpg"
+// import vc_prod3 from "../../public/data_images/VaradaCreations/product3.jpg"
 import vc_prod4 from "../../public/data_images/VaradaCreations/product4.jpg"
-import vc_prod5 from "../../public/data_images/VaradaCreations/product5.jpg"
-import vc_prod6 from "../../public/data_images/VaradaCreations/product6.jpg"
-import vc_prod7 from "../../public/data_images/VaradaCreations/product7.jpg"
+// import vc_prod5 from "../../public/data_images/VaradaCreations/product5.jpg"
+// import vc_prod6 from "../../public/data_images/VaradaCreations/product6.jpg"
+// import vc_prod7 from "../../public/data_images/VaradaCreations/product7.jpg"
 // import vc_owner from "../../public/data_images/VaradaCreations/
 import mf_logo from "../../public/data_images/MitthiFashions/logo.png"
 import mf_prod1 from "../../public/data_images/MitthiFashions/product1.jpg"
 import mf_prod2 from "../../public/data_images/MitthiFashions/product2.jpg"
 import mf_prod3 from "../../public/data_images/MitthiFashions/product3.jpg"
 import mf_prod4 from "../../public/data_images/MitthiFashions/product4.jpg"
-import mf_owner from "../../public/data_images/MitthiFashions/owner.jpg"
+// import mf_owner from "../../public/data_images/MitthiFashions/owner.jpeg"
 import cm_logo from "../../public/data_images/CreativeMasters/logo.jpg"
 import cm_prod1 from "../../public/data_images/CreativeMasters/product1.jpg"
 import cm_prod2 from "../../public/data_images/CreativeMasters/product2.jpg"
@@ -56,12 +56,12 @@ import cm_owner from "../../public/data_images/CreativeMasters/owner.jpg"
 
 
 
-const as_images = [as_prod1, as_prod2, as_prod3,as_logo]
+const as_images = [as_prod1, as_prod3,as_logo]
 const tdss_images = [tdss_prod1,tdss_prod2,tdss_prod3,tdss_logo]
 const qk_images = [qk_prod1, qk_prod2, qk_prod3, qk_prod4, qk_logo]
 const abs_images = [abs_prod1,abs_prod2,abs_prod3,abs_prod4,abs_logo]
 const hu_images = [hu_prod1,hu_prod2,hu_prod3,hu_prod4,hu_logo]
-const vc_images = [vc_prod1,vc_prod2,vc_prod3,vc_prod4,vc_prod5,vc_prod6,vc_prod7]
+const vc_images = [vc_prod4,vc_logo]
 const mf_images = [mf_prod1,mf_prod2,mf_prod3,mf_prod4,mf_prod4]
 const cm_images = [cm_prod1,cm_prod2,cm_prod4,cm_prod5,cm_prod6]
 
@@ -163,7 +163,7 @@ const data = [
      "slug":"mitthi-fashions",
      "prod_images":mf_images,
      "logo" : mf_logo,
-     "owner_pic" : mf_owner
+    //  "owner_pic" : mf_owner
     },
     {
      "brand_name": "Creative Masters",
