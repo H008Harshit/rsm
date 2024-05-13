@@ -1,8 +1,7 @@
-import PhotoGallery from "@/components/detail/photoGallery";
+import PhotoGallery from "@/components/detail/PhotoGallery";
 import map from "../../../public/assets/svg/map.svg";
 import phone from "../../../public/assets/svg/phone.svg";
 import link from "../../../public/assets/svg/link.svg";
-import owner_pic from "../../../public/data_images/HappinessUnwrapped/owner.jpeg";
 import fb from "../../../public/assets/svg/fb.svg";
 import insta from "../../../public/assets/svg/insta.svg";
 import { useParams } from "next/navigation";
