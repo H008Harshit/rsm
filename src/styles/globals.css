@@ -1,0 +1,150 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  width: 100vw;
+}
+
+
+body {
+  width: 100vw;
+  background-color: white;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+input[type="text"] {
+  background-color: white;
+}
+input[type="radio"]:after {
+  background-color: white;
+  accent-color: blue;
+}
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+.inline-dot .slick-dots {
+  width: fit-content;
+  padding: 5px;
+  height: 18px;
+  position: relative;
+  margin: -55px auto 0 auto;
+  border-radius: 45px;
+  /* bottom: 10px;
+left: 40%; */
+}
+.inline-dot .slick-dots li {
+  margin: 0 2px;
+  height: 16px;
+  width: auto;
+}
+.inline-dot .slick-dots {
+  background-color: rgba(34, 34, 34, 0.36);
+}
+.inline-dot .slick-dots .slick-active div {
+  width: 14px !important;
+  /* margin:0 8px; */
+}
+/* .inline-dot .slick-dots .slick-active{
+margin : 0 10px;
+} */
+/* Firefox */
+input[type="number"] {
+  -moz-appearance: textfield;
+}
+.inline-dot .slick-dots li {
+  margin: 0 2px;
+  height: 16px;
+  width: auto;
+}
+.inline-dot .slick-dots {
+  background-color: rgba(34, 34, 34, 0.36);
+}
+.inline-dot .slick-dots .slick-active div {
+  width: 14px !important;
+  /* margin:0 8px; */
+}
+
+@media only screen and (max-width: 768px) {
+  .slick-track {
+    pointer-events: none;
+  }
+}
+
+.selectedOption {
+  @apply text-black;
+}
+
+/** this is for walk detail page preview carousal */
+.thisday-preview .slick-list {
+  max-width: 900px;
+  max-height: 550px;
+  margin: 0 auto;
+}
+
+.brand-focus-section .slick-slide{
+  width: 250px !important;
+  height: 350px;
+  margin-right:30px;
+}
+
+.mini-brand-focus-section .slick-slide{
+  width: 200px !important;
+  height: 150px;
+  margin-right:30px;
+}
+
+
+.thisday-preview-dot {
+  display: flex !important;
+  margin: 15px auto;
+  justify-content: center;
+  width: 98vw;
+  overflow-x: scroll;
+}
+
+.thisday-preview-dot a img {
+  filter: grayscale(100%);
+  width: 100px !important;
+}
+.thisday-preview-dot li {
+  width: 100px !important;
+  margin-left: 10px;
+}
+.thisday-preview-dot .slick-active a img {
+  filter: none;
+  border: 2px solid #be3455;
+}
+
+.thisday-preview-dot::-webkit-scrollbar {
+  display: none;
+}
+.review-carousal .slick-track {
+  margin-left: 0px;
+}
+/* .slick-track {
+  margin-left: 0px !important;
+} */
+.rating svg {
+  display: inline;
+}
+
+.blog .slick-slide {
+  /* margin-right:30px; */
+  margin: 0 15px;
+  /* width: 350px !important; */
+}
+
+.blog .slick-list {
+  /* max-height: 350px */
+  max-width: fit-content;
+}
+.slick-track {
+  width: max-content !important;
+  /* padding-right: 1000px; */
+}
