@@ -14,7 +14,7 @@ const Header = () => {
                 <Link href="https://www.magicka.in" target="_blank">
                     <p>About Us</p>
                 </Link>
-                <Link href="">
+                <Link href="#contact-us">
                     <p>Contact</p>
                 </Link>
             </div>

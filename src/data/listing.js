@@ -79,6 +79,7 @@ const data = [
      "prod_images": as_images,
      "logo":as_logo,
      "owner_pic": as_owner,
+     "owner_bio" : ""
     },
     {
      "brand_name": "The Desi Swag Store",
@@ -91,7 +92,8 @@ const data = [
      "slug":"the-desi-swag-store",
      "prod_images":tdss_images,
      "logo" : tdss_logo,
-     "owner_pic" : tdss_owner
+     "owner_pic" : tdss_owner,
+     "owner_bio": ""
     },
     {
      "brand_name": "Qala Katha",
@@ -104,7 +106,10 @@ const data = [
      "slug":"qala-katha",
      "prod_images":qk_images,
      "logo" : qk_logo,
-     "owner_pic" : qk_owner
+     "owner_pic" : qk_owner,
+     "owner_bio": ""
+
+
     },
     {
      "brand_name": "Aushadhi by Shikha ",
@@ -118,7 +123,9 @@ const data = [
      "slug":"aushadhi-by-shikha",
      "prod_images":abs_images,
      "logo" : abs_logo,
-     "owner_pic" : abs_owner
+     "owner_pic" : abs_owner,
+     "owner_bio": ""
+
     },
     {
      "brand_name": "Happiness Unwrapped",
@@ -134,7 +141,9 @@ const data = [
      "slug":"happiness-unwrapped",
      "prod_images":hu_images,
      "logo" : hu_logo,
-     "owner_pic" : hu_owner
+     "owner_pic" : hu_owner,
+     "owner_bio": ""
+
     },
     {
      "brand_name": "Varada’s Creations ",
@@ -150,7 +159,9 @@ const data = [
      "slug": "varada-creations",
      "prod_images":vc_images,
      "logo" : vc_logo,
-    //  "owner_pic" : vc_owner
+    //  "owner_pic" : vc_owner,
+    "owner_bio": ""
+
     },
     {
      "brand_name": "Mitthi Fashions",
@@ -163,6 +174,8 @@ const data = [
      "slug":"mitthi-fashions",
      "prod_images":mf_images,
      "logo" : mf_logo,
+     "owner_bio": ""
+
     //  "owner_pic" : mf_owner
     },
     {
@@ -177,7 +190,9 @@ const data = [
      "slug":'creative-masters',
      "prod_images":cm_images,
      "logo" : cm_logo,
-     "owner_pic" : cm_owner
+     "owner_pic" : cm_owner,
+     "owner_bio": ""
+
     }
    ]
 

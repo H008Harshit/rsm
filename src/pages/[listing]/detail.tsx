@@ -8,6 +8,7 @@ import insta from "../../../public/assets/svg/insta.svg";
 import { useParams } from "next/navigation";
 import data from "@/data/listing.js";
 import Carousal from "@/components/detail/Carousal";
+import Link from "next/link";
 
 const detailPage = () => {
   const param = useParams();
@@ -64,7 +65,7 @@ const detailPage = () => {
                 </p>
               </div>
             </div>
-            <div className="collapse collapse-plus border-[1px] my-8 shadow-[0px_0px_0px_1px_rgba(0,0,0,0.06),0px_1px_1px_-0.5px_rgba(0,0,0,0.06),0px_3px_3px_-1.5px_rgba(0,0,0,0.06),_0px_6px_6px_-3px_rgba(0,0,0,0.06),0px_12px_12px_-6px_rgba(0,0,0,0.06),0px_24px_24px_-12px_rgba(0,0,0,0.06)] border-grey_light rounded-none ">
+            {/* <div className="collapse collapse-plus border-[1px] my-8 shadow-[0px_0px_0px_1px_rgba(0,0,0,0.06),0px_1px_1px_-0.5px_rgba(0,0,0,0.06),0px_3px_3px_-1.5px_rgba(0,0,0,0.06),_0px_6px_6px_-3px_rgba(0,0,0,0.06),0px_12px_12px_-6px_rgba(0,0,0,0.06),0px_24px_24px_-12px_rgba(0,0,0,0.06)] border-grey_light rounded-none ">
               <input type="radio" name="my-accordion-3" defaultChecked />
               <div className="collapse-title text-DT2 font-medium">
                 Which material is used?
@@ -87,7 +88,7 @@ const detailPage = () => {
                   and sturdy. Light in weight.
                 </p>
               </div>
-            </div>
+            </div> */}
           </div>
           <div
             id="WalkDetailRight"
@@ -109,10 +110,11 @@ const detailPage = () => {
                     Beach Road, Sanpada Navi Mumbai 400705
                   </p>
                 </div>
-                <div className="p-4 flex gap-2 border-b-[1px] border-grey_light items-center">
+                {list_data?.Phone && <div className="p-4 flex gap-2 border-b-[1px] border-grey_light items-center">
                   <img src={phone.src} alt="map-svg" className="w-6 h-6 " />
-                  <p className="text-DB2">+91 8879910219</p>
-                </div>
+                  <p className="text-DB2">{list_data?.Phone}</p>
+                </div>}
+                <Link href={'/'}>
                 <div className="p-4 flex gap-2 border-b-[1px] border-grey_light items-center">
                   <img src={link.src} alt="map-svg" className="w-6 h-6 " />
                   <p className="text-DB2">website link</p>
@@ -121,6 +123,7 @@ const detailPage = () => {
                   <img src={fb.src} alt="fb-svg" className="w-6 h-6 " />
                   <img src={insta.src} alt="insta-svg" className="w-6 h-6 " />
                 </div>
+                </Link>
               </div>
             </div>
           </div>
@@ -131,7 +134,7 @@ const detailPage = () => {
           <div className="grid grid-cols-8">
             <div className="col-span-8 desktop:mb-0 mb-4 desktop:col-span-2">
               <img
-                src={list_data?.owner_pic?.src}
+                src={list_data?.owner_pic?.src || list_data?.logo?.src}
                 alt="owner-image"
                 className="w-[200px] h-[200px] rounded-full object-cover"
               />
@@ -139,17 +142,7 @@ const detailPage = () => {
             <div className="desktop:col-span-6 col-span-8">
               <div className="text-DH2 mb-4">{list_data?.brand_owner}</div>
               <div className="text-DT2  text-grey_dark text-justify">
-                I am Shraddha Maniyar – an architect by education, but a
-                creative enthusiast at heart. Mezmerize isn't just a brand; it's
-                a journey that began in 1987, sparked by the ingenuity of my
-                incredible mother, Leela Dhoot. Our story unfolds from the cozy
-                confines of home, where my mother's artistic prowess birthed a
-                range of stitched wonders – wardrobe organizers, travel
-                essentials, trousseau organizers, and display pouches, all
-                resonating with quality and affordability. Encouraged by the
-                love and admiration from friends and family, I joined this
-                creative odyssey, expanding our offerings to include trays, home
-                decor, gift packaging, and much more.
+                {list_data?.owner_bio}
               </div>
             </div>
           </div>

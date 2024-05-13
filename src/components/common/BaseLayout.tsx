@@ -37,7 +37,7 @@ const BaseLayout = ({ children }: any) => {
               </div>
             </div>
             <div className="desktop:col-span-1 col-span-3 py-4">
-              <div>
+              <div className="mb-4">
               <p className="text-DT1 text-[#81685B]">Contact Us</p>
 
                 Magicka.in<br/> Connect@Magicka.in <br/>Delhi Office: H-11 B, Vijay Nagar,<br/>
@@ -52,7 +52,7 @@ const BaseLayout = ({ children }: any) => {
           </div>
         </div>
       </div>
-      <div className="bg-[#9800009E] mb-4 px-[10%] py-[2%] text-DB2 justify-between text-white flex items-center">
+      <div className="bg-[#9800009E] mb-4 px-[10%] py-[2%] text-DB2 justify-between text-white desktop:flex items-center">
         <div>Copyright © 2022 magicka | Powered by Magicka Growth Partners</div>
         <div>Main Page Contact Us</div>
       </div>
