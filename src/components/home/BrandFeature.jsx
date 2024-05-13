@@ -12,12 +12,12 @@ const side_3 = data[3];
 
 const BrandFeature = () => {
   return (
-    <div className="desktop:px-[10%] px-4">
+    <div className="desktop:px-[10%] mb-8 px-4">
       <div>
-        <div className="grid grid-cols-6 desktop:gap-10 my-[80px]">
+        <div className="grid grid-cols-6 desktop:gap-10 ">
           <div className=" cursor-pointer col-span-6 desktop:col-span-4">
             <Link href={featured_brand?.slug+'/detail'}>
-              <img className="h-[55vh] object-cover w-full" src={featured_brand?.prod_images[0]?.src} alt="image" />
+              <img className="desktop:h-[55vh] object-contain desktop:object-cover w-full" src={featured_brand?.prod_images[0]?.src} alt="image" />
               <p className="my-1 text-DB2 flex items-center gap-2">
                 <div className="w-2 rounded-full bg-[#222] h-2" />
                 {featured_brand?.brand_category}

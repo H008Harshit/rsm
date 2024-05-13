@@ -6,8 +6,36 @@ import frame3 from "../../../public/assets/images/Frame3.png"
 import frame4 from "../../../public/assets/images/Frame4.png"
 import frame5 from "../../../public/assets/images/Frame5.png"
 import frame7 from "../../../public/assets/images/Frame7.png"
+import Link from "next/link";
 
+// const data = []
 const BrandFocus = () => {
+  const data = [
+    {
+        name: "Sculptedge",
+        img : frame1
+    },
+    {
+        name: "Sculptyou",
+        img : frame2
+    },
+    {
+        name: "Plum luxure",
+        img : frame3
+    },
+    {
+        name: "Bling closet",
+        img : frame4
+    },
+    {
+        name: "plt",
+        img : frame5
+    },
+    {
+        name: "Bling closet 2",
+        img : frame7
+    },
+]
     var settings = {
         dots: false,
         infinite: false,
@@ -56,12 +84,9 @@ const BrandFocus = () => {
             {/* <div className="col-end-6">Explore More Deals</div> */}
           </div>
           <SlickCarousalWrapper settings={settings}>
-            <img className="object-cover rounded-xl h-[350px]" src={frame1.src} />
-            <img className="object-cover rounded-xl h-[350px]" src={frame2.src} />
-            <img className="object-cover rounded-xl h-[350px]" src={frame3.src} />
-            <img className="object-cover rounded-xl h-[350px]" src={frame4.src} />
-            <img className="object-cover rounded-xl h-[350px]" src={frame5.src} />
-            <img className="object-cover rounded-xl h-[350px]" src={frame7.src} />
+            {data.map((item,i)=><Link href={'/curated-brands/'+item.name}>
+              <img className="object-cover rounded-xl h-[350px]" src={item?.img?.src}  />
+            </Link>)}
           </SlickCarousalWrapper>
         </div>
     )

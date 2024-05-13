@@ -4,10 +4,11 @@ import { useParams } from "next/navigation";
 
 const Search = () => {
   const search = useParams();
-  const searched_query = search?.search_query;
+  
+  const searched_query  = search?.search_query;
 
   const searched_data = data.filter((item, i) =>
-    item.brand_category.toLowerCase().includes(searched_query)
+    item?.brand_category?.toLowerCase()?.includes(searched_query.toString())
   );
 
   console.log(searched_data);

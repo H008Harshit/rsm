@@ -19,9 +19,9 @@ const BannerCarousel = () => {
   };
   return (
     <SlickCarousalWrapper settings={settings}>
-      <img className="desktop:h-[70vh] h-auto" src={Banner1.src} alt="Banner-1" />
-      <img className="desktop:h-[70vh] h-auto" src={Banner2.src} alt="Banner-2" />
-      <img className="desktop:h-[70vh] h-auto" src={Banner3.src} alt="Banner-3" />
+      <img className="desktop:h-[90vh] h-auto" src={Banner1.src} alt="Banner-1" />
+      <img className="desktop:h-[90vh] h-auto" src={Banner2.src} alt="Banner-2" />
+      <img className="desktop:h-[90vh] h-auto" src={Banner3.src} alt="Banner-3" />
     </SlickCarousalWrapper>
   );
 };

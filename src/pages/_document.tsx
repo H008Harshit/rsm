@@ -1,5 +1,6 @@
 import BaseLayout from "@/components/common/BaseLayout";
 import { Html, Head, Main, NextScript } from "next/document";
+import logo from "../../public/assets/images/magickalogo.jpeg"
 export default function Document() {
   return (
     <Html lang="en">
