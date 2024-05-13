@@ -12,10 +12,10 @@ const Blog = () => {
     initialSlide:0,
     useTransform: "transform-disable",
     nextArrow: (
-      <CarousalArrow classStyle=" bg-white absolute top-[175px]  right-[-30px]  " />
+      <CarousalArrow classStyle="z-0 bg-white absolute top-[175px]  right-[-30px]  " />
     ),
     prevArrow: (
-      <CarousalArrow classStyle=" bg-white absolute top-[175px] left-[-25px] z-20 rotate-180" />
+      <CarousalArrow classStyle="z-0 bg-white absolute top-[175px] left-[-25px] z-20 rotate-180" />
     ),
     useCss: "disable ",
     draggable: false,

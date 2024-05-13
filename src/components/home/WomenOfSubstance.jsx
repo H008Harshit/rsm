@@ -2,7 +2,7 @@ import Link from "next/link";
 
 const WomenOfSubstance = () => {
     return (
-        <div className="z-10 relative desktop:px-[10%] text-white px-4 py-[4%]">
+        <div className="z-10 relative desktop:px-[10%] desktop:text-white px-4 py-[4%]">
             <div className="text-center text-[2.25rem] mb-8 font-semibold">
                 Women Of Substance
             </div>

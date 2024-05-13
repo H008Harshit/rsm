@@ -52,7 +52,7 @@ export default function Home() {
       <Categories />
       <div className="relative">
         <img
-          className="desktop:h-[80vh] absolute h-[105vh] object-cover w-full"
+          className="hidden desktop:h-[80vh] absolute object-cover w-full"
           src={bg.src}
           alt="image"
         />

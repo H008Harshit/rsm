@@ -44,9 +44,9 @@ const BrandFocus = () => {
         slidesToScroll: 4,
         className: " brand-focus-section",
         useTransform: "transform-disable",
-        nextArrow: <CarousalArrow classStyle=" bg-white absolute top-[160px]  right-[-30px]  " />,
+        nextArrow: <CarousalArrow classStyle="z-0 bg-white absolute top-[160px]  right-[-30px]  " />,
         prevArrow: (
-          <CarousalArrow classStyle=" bg-white absolute top-[160px] left-[-25px] z-20 rotate-180" />
+          <CarousalArrow classStyle="z-0 bg-white absolute top-[160px] left-[-25px] z-20 rotate-180" />
         ),
         useCss: "disable ",
         draggable: false,
@@ -78,7 +78,7 @@ const BrandFocus = () => {
         ]
       };
     return (
-        <div className="relative bg-[#fff8f8] py-[4%] px-4 desktop:px-[10%]">
+        <div className="relative bg-[#fff8f8] py-[4%] z-0 px-4 desktop:px-[10%]">
           <div className="grid mb-8 grid-cols-4">
             <p className="desktop:col-span-2 col-span-4 text-DH2 font-bold text-[#3f3c4b]">CURATED BRANDS & EXCITING DEALS</p>
             {/* <div className="col-end-6">Explore More Deals</div> */}
