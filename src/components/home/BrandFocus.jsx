@@ -44,9 +44,9 @@ const BrandFocus = () => {
         slidesToScroll: 4,
         className: " brand-focus-section",
         useTransform: "transform-disable",
-        nextArrow: <CarousalArrow classStyle="z-0 bg-white absolute top-[160px]  right-[-30px]  " />,
+        nextArrow: <CarousalArrow classStyle="hidden desktop:flex z-0 bg-white !absolute top-[160px]  right-[-30px]  " />,
         prevArrow: (
-          <CarousalArrow classStyle="z-0 bg-white absolute top-[160px] left-[-25px] z-20 rotate-180" />
+          <CarousalArrow classStyle="hidden desktop:flex  z-0 bg-white absolute top-[160px] left-[-25px] z-20 rotate-180" />
         ),
         useCss: "disable ",
         draggable: false,
