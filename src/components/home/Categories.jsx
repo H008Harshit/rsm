@@ -48,8 +48,8 @@ const Categories = () => {
                 Discover Something <span className="text-[#008084]">Different</span>
             </div>
             <div className="flex flex-wrap justify-evenly gap-6 ">
-            {cat_data.map((item)=>
-                <Link href={'/'+'category/'+item.type}>
+            {cat_data.map((item,i)=>
+                <Link key={i} href={'/'+'category/'+item.type}>
                     <div className="w-[106px] h-[116px] flex flex-col items-center gap-2">
                         <img className="h-[64px] w-[64px] rounded-full border-2 border-[#008084]" src={item.img.src} alt="cat-img"/>
                         <p className="text-center">{item.title}</p>

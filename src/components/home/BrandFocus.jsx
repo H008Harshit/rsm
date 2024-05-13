@@ -84,7 +84,7 @@ const BrandFocus = () => {
             {/* <div className="col-end-6">Explore More Deals</div> */}
           </div>
           <SlickCarousalWrapper settings={settings}>
-            {data.map((item,i)=><Link href={'/curated-brands/'+item.name}>
+            {data.map((item,i)=><Link key={i} href={'/curated-brands/'+item.name}>
               <img className="object-cover rounded-xl h-[350px]" src={item?.img?.src}  />
             </Link>)}
           </SlickCarousalWrapper>
