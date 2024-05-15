@@ -48,7 +48,7 @@ import cm_prod4 from "../../public/data_images/CreativeMasters/product4.jpg";
 import cm_prod5 from "../../public/data_images/CreativeMasters/product5.jpg";
 import cm_prod6 from "../../public/data_images/CreativeMasters/product6.jpg";
 import cm_owner from "../../public/data_images/CreativeMasters/owner.jpg";
-import ec_owner from "../../public/data_images/EstiloCasa/owner.jpg";
+// import ec_owner from "../../public/data_images/EstiloCasa/owner.jpg";
 import ec_prod1 from "../../public/data_images/EstiloCasa/product1.jpg";
 import ec_prod2 from "../../public/data_images/EstiloCasa/product2.jpg";
 import ec_prod3 from "../../public/data_images/EstiloCasa/product3.jpg";
@@ -83,17 +83,13 @@ import vshg_prod5 from "../../public/data_images/VeeranjaneyaSHG/product5.jpeg";
 import sv_prod1 from "../../public/data_images/SatyaVedha/product1.jpeg";
 import sv_prod2 from "../../public/data_images/SatyaVedha/product2.jpeg";
 import nba_owner from "../../public/data_images/NoorbyAastha/owner.jpg";
-import nba_prod1 from "../../public/data_images/NoorbyAastha/product1.jpg"
-import nba_prod2 from "../../public/data_images/NoorbyAastha/product2.jpg"
-import nba_prod4 from "../../public/data_images/NoorbyAastha/product4.jpg"
-import nba_prod3 from "../../public/data_images/NoorbyAastha/product3.jpg"
-import nba_prod5 from "../../public/data_images/NoorbyAastha/product5.jpg"
-import nba_prod6 from "../../public/data_images/NoorbyAastha/product6.jpg"
-import nba_prod7 from "../../public/data_images/NoorbyAastha/product7.jpg"
-
-
-
-
+import nba_prod1 from "../../public/data_images/NoorbyAastha/product1.jpg";
+import nba_prod2 from "../../public/data_images/NoorbyAastha/product2.jpg";
+import nba_prod4 from "../../public/data_images/NoorbyAastha/product4.jpg";
+import nba_prod3 from "../../public/data_images/NoorbyAastha/product3.jpg";
+import nba_prod5 from "../../public/data_images/NoorbyAastha/product5.jpg";
+import nba_prod6 from "../../public/data_images/NoorbyAastha/product6.jpg";
+import nba_prod7 from "../../public/data_images/NoorbyAastha/product7.jpg";
 
 const as_images = [as_prod1, as_prod3, as_logo];
 const tdss_images = [tdss_prod1, tdss_prod2, tdss_prod3, tdss_logo];
@@ -116,7 +112,15 @@ const vshg_images = [
   vshg_prod5,
 ];
 const sv_images = [sv_prod1, sv_prod2];
-const nba_images = [nba_prod1, nba_prod2, nba_prod3, nba_prod4, nba_prod5,nba_prod6,nba_prod7];
+const nba_images = [
+  nba_prod1,
+  nba_prod2,
+  nba_prod3,
+  nba_prod4,
+  nba_prod5,
+  nba_prod6,
+  nba_prod7,
+];
 
 const data = [
   {
@@ -220,7 +224,7 @@ const data = [
     slug: "varada-creations",
     prod_images: vc_images,
     logo: vc_logo,
-    //  "owner_pic" : vc_owner,
+    owner_pic: "",
     owner_bio: "",
     powered_by: false,
   },
@@ -240,7 +244,7 @@ const data = [
     owner_bio: "",
     powered_by: false,
 
-    //  "owner_pic" : mf_owner
+    owner_pic: "",
   },
   {
     brand_name: "Creative Masters",
@@ -271,7 +275,7 @@ const data = [
     slug: "estilo-casa",
     prod_images: es_images,
     // "logo" : cm_logo,
-    owner_pic: ec_owner,
+    owner_pic: '',
     powered_by: false,
 
     // "owner_bio": ""
@@ -345,8 +349,8 @@ const data = [
       "https://m.facebook.com/noor.by.aasthaandrashi/?ref=bookmarks",
     slug: "noor-by-aastha",
     powered_by: false,
-    prod_images : nba_images,
-    owner_pic : nba_owner
+    prod_images: nba_images,
+    owner_pic: nba_owner,
   },
   {
     brand_name: "Veeranjaneya SHG / Vijaya Healthy Foods",

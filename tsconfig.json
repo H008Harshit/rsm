@@ -16,6 +16,6 @@
       "@/*": ["./src/*"]
     }
   },
-  "include": ["next-env.d.ts", "**/*.ts", "**/*.tsx", "src/components/home/BrandFocus.jsx", "src/components/wrapper/NextJsImagetjs"],
+  "include": ["next-env.d.ts", "**/*.ts", "**/*.tsx", "src/components/home/BrandFocus.jsx", "src/components/wrapper/NextJsImagetjs", "src/pages/[listing]/detail.jsx"],
   "exclude": ["node_modules"]
 }
