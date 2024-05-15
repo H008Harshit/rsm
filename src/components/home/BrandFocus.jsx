@@ -6,6 +6,7 @@ import frame3 from "../../../public/assets/images/Frame3.png"
 import frame4 from "../../../public/assets/images/Frame4.png"
 import frame5 from "../../../public/assets/images/Frame5.png"
 import frame7 from "../../../public/assets/images/Frame7.png"
+import frame8 from "../../../public/assets/images/Frame8.png"
 import Link from "next/link";
 
 // const data = []
@@ -25,16 +26,16 @@ const BrandFocus = () => {
     },
     {
         name: "Bling closet",
-        img : frame4
+        img : frame8
     },
     {
         name: "plt",
         img : frame5
     },
-    {
-        name: "Bling closet 2",
-        img : frame7
-    },
+    // {
+    //     name: "Bling closet 2",
+    //     img : frame7
+    // },
 ]
     var settings = {
         dots: false,
@@ -80,7 +81,7 @@ const BrandFocus = () => {
     return (
         <div className="relative bg-[#fff8f8] py-[4%] z-0 px-4 desktop:px-[10%]">
           <div className="grid mb-8 grid-cols-4">
-            <p className="desktop:col-span-2 col-span-4 text-DH2 font-bold text-[#3f3c4b]">CURATED BRANDS & EXCITING DEALS</p>
+            <p className="desktop:col-span-2 col-span-4 text-DH2 font-bold text-[#3f3c4b] font-andora">CURATED BRANDS & EXCITING DEALS</p>
             {/* <div className="col-end-6">Explore More Deals</div> */}
           </div>
           <SlickCarousalWrapper settings={settings}>

@@ -1,7 +1,5 @@
 import SlickCarousalWrapper from "../common/SlickCarousal";
-import Banner1 from "../../../public/assets/images/banner-1.jpg";
-import Banner2 from "../../../public/assets/images/banner-2.jpg";
-import Banner3 from "../../../public/assets/images/banner-3.jpg";
+
 const Carousal = ({images}) => {
   var settings = {
     dots: true,

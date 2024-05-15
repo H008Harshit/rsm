@@ -32,7 +32,7 @@ const Categories = () => {
             "type": "beauty",
         },
         {
-            "title": "Gift & Home Decor",
+            "title": "Handicraft & Home Furnishing",
             "img": gift,
             "type": "gift",
         },
@@ -43,16 +43,16 @@ const Categories = () => {
         }
     ]
     return (
-        <div className="desktop:px-[10%] px-4  bg-[#f7ffff] py-[4%]">
-            <div className="text-DH1 font-black mb-[4%]">
-                Discover Something <span className="text-[#008084]">Different</span>
+        <div className="desktop:px-[10%] px-4  bg-[#fff8f8] py-[4%]">
+            <div className="text-DH1 font-andora font-black mb-[4%]">
+                Discover Women Led <span className="text-mg_primary">Brands</span> 
             </div>
             <div className="flex flex-wrap justify-evenly gap-6 ">
             {cat_data.map((item,i)=>
                 <Link key={i} href={'/'+'category/'+item.type}>
                     <div className="w-[106px] h-[116px] flex flex-col items-center gap-2">
                         <img className="h-[64px] w-[64px] rounded-full border-2 border-[#008084]" src={item.img.src} alt="cat-img"/>
-                        <p className="text-center">{item.title}</p>
+                        <p className="font-lato text-center">{item.title}</p>
                     </div>
                 </Link>
             )}

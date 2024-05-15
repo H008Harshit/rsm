@@ -7,8 +7,9 @@ import insta from "../../../public/assets/svg/insta.svg";
 import { useParams } from "next/navigation";
 import data from "@/data/listing.js";
 import Carousal from "@/components/detail/Carousal";
+import powered from "../../../public/assets/images/powered_by.png"
 import Link from "next/link";
-
+import listing from "../../../public/assets/images/listing_footer.png"
 const detailPage = () => {
   const param = useParams();
   const list_slug = param?.listing;
@@ -17,18 +18,24 @@ const detailPage = () => {
   console.log(list_data);
 
   return (
-    <div className="mt-[80px] my-12">
+    <div className="mt-[80px] ">
       {/* photo gallery */}
       <div className="mb-8 desktop:hidden">
         <Carousal images={list_data?.prod_images} />
       </div>
       <div className="w-full desktop:px-[10%] px-4  py-4 text-white desktop:bg-[rgba(230,0,0,0.2)] ">
         <div className="grid grid-cols-2">
-          <div className=" col-span-2  text-DH1 flex flex-col ">
-            <span className="text-black">{list_data?.brand_name}</span>
-            <span className="text-DT2  text-grey_dark">
-              {list_data?.brand_category}
-            </span>
+          <div className=" col-span-2 desktop:flex justify-between  ">
+            <div className="text-DH1 flex flex-col ">
+              <span className=" font-andora text-black">{list_data?.brand_name}</span>
+              <span className="text-DT2 font-lato text-grey_dark">
+                {list_data?.brand_category}
+              </span>
+            </div>
+            {list_data?.powered_by && <div className="flex items-center my-2 gap-4">
+              <p className="text-DT1 text-black">Powered By</p>
+              <img className="desktop:w-[100px] w-[60px] h-[30px] desktop:h-[50px]" src={powered.src} alt="powered-by"/>
+            </div>}
           </div>
           {/* <div className="desktop:col-end-4">
             <div className="flex items-center gap-4">
@@ -47,11 +54,11 @@ const detailPage = () => {
       <div className="desktop:mx-[10%] mx-4 mt-[20px]">
         <div className="desktop:flex">
           <div id="WalkDetailLeft " className="w-full desktop:w-[60%]">
-            <p className="text-DT2 mb-[40px] text-justify text-grey_dark">
+            <p className="text-DT2 font-lato mb-[40px] text-justify text-grey_dark">
               {list_data?.description}
             </p>
             {/* FAQ */}
-            <p className=" text-DH2 my-4">FAQs</p>
+            <p className="font-andora text-DH2 my-4">FAQs</p>
             <div className="collapse collapse-plus border-[1px] my-8 shadow-[0px_0px_0px_1px_rgba(0,0,0,0.06),0px_1px_1px_-0.5px_rgba(0,0,0,0.06),0px_3px_3px_-1.5px_rgba(0,0,0,0.06),_0px_6px_6px_-3px_rgba(0,0,0,0.06),0px_12px_12px_-6px_rgba(0,0,0,0.06),0px_24px_24px_-12px_rgba(0,0,0,0.06)] border-grey_light rounded-none ">
               <input type="radio" name="my-accordion-3" defaultChecked />
               <div className="collapse-title text-DT2 font-medium">
@@ -91,7 +98,7 @@ const detailPage = () => {
           </div>
           <div
             id="WalkDetailRight"
-            className="desktop:w-[40%] desktop:pl-[40px]"
+            className="desktop:w-[40%] font-lato desktop:pl-[40px]"
           >
             <div className="sticky top-[15%]">
               <div className="w-full border-[1px] rounded-md border-grey_light p-2">
@@ -129,7 +136,7 @@ const detailPage = () => {
         </div>
         <div className=" my-6  h-[1px] bg-grey_light" />
         <div>
-          <div className="text-DH2 my-6">Meet Owner</div>
+          <div className="text-DH2 my-6 font-andora">Meet Owner</div>
           <div className="grid grid-cols-8">
             <div className="col-span-8 desktop:mb-0 mb-4 desktop:col-span-2">
               <img
@@ -139,7 +146,7 @@ const detailPage = () => {
               />
             </div>
             <div className="desktop:col-span-6 col-span-8">
-              <div className="text-DH2 mb-4">{list_data?.brand_owner}</div>
+              <div className="text-DH2 font-andora mb-4">{list_data?.brand_owner}</div>
               <div className="text-DT2  text-grey_dark text-justify">
                 {list_data?.owner_bio}
               </div>
@@ -147,6 +154,7 @@ const detailPage = () => {
           </div>
         </div>
       </div>
+      <img className="mt-6" src={listing.src} alt="footer"/>
     </div>
   );
 };

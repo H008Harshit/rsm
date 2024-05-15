@@ -14,6 +14,7 @@ const Td_Colors = {
   primary_disabled: "#be345591",
   grey_light_variant: "#EEEEEE",
   grey_outline: "#73777F",
+  mg_primary: "#ED0066"
 };
 const config: Config = {
   content: [
@@ -169,6 +170,10 @@ const config: Config = {
       screens: {
         desktop: "768px",
         mobile: "320px",
+      },
+      fontFamily: {
+        andora: ['"Andora Modern Serif"', 'serif'],
+        lato: ['var(--font-lato)', 'sans'],
       },
       // fontFamily: {
       // 	poppins: ['Poppins', ...defaultTheme.fontFamily.sans],

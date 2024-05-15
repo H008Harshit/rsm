@@ -1,4 +1,3 @@
-import BaseLayout from "@/components/common/BaseLayout";
 import BannerCarousel from "@/components/home/BannerCarousel";
 import BrandFeature from "@/components/home/BrandFeature";
 import BrandFocus from "@/components/home/BrandFocus";
@@ -6,21 +5,21 @@ import MiniBrandFocus from "@/components/home/MiniBrandFocus";
 import Categories from "@/components/home/Categories";
 import WomenOfSubstance from "@/components/home/WomenOfSubstance";
 import bg from "../../public/assets/images/entrepreneur.png";
-import contact from "../../public/assets/images/contact.png";
+import home_screen from "../../public/assets/images/home_screen_banner.png"
 import PhotoLibrary from "@/components/home/PhotoLibrary";
 import { useState } from "react";
-
+import home_footer from "../../public/assets/images/home-footer.png"
 export default function Home() {
   const [search,setSearch] = useState('')
   return (
     <div className="mt-[80px] ">
       <BannerCarousel />
       <div className="mt-[50px] mb-8 desktop:px-[10%] px-4 text-center">
-        <div className="text-[35px] font-bold text-primary_enabled">
+        <div className="text-[35px] font-andora font-bold text-primary_enabled">
           Want to explore more brands?
           <br />
         </div>
-        <span className="text-DT2 text-primary_disabled">
+        <span className="text-DT2 font-lato text-primary_disabled">
           Every Woman Entrepreneur has a unique Brand Story to tell. Let’s join
           hands to provide these entrepreneurs the right platform.
         </span>
@@ -48,16 +47,32 @@ export default function Home() {
       </div>
       <BrandFeature />
       <BrandFocus />
+      <img src={home_screen.src} alt="home-screen-banner"/>
       <MiniBrandFocus />
       <Categories />
       <div className="relative">
         <img
-          className="hidden desktop:h-[80vh] absolute object-cover w-full"
+          className="hidden desktop:block desktop:h-[80vh] top-790 absolute object-cover w-full"
           src={bg.src}
           alt="image"
         />
         <WomenOfSubstance />
+        <div className="relative">
+          <video className="w-full  object-cover h-[80vh]"  autoPlay loop>
+            <source src="http://www.magicka.in/public_doc/b.mp4" />
+          </video>
+          <div className="absolute desktop:mx-[10%] flex flex-col desktop:flex-row text-white items-center justify-around z-10 top-[10%] desktop:top-[30%]">
+            <video controls>
+              <source src="https://video.fdel42-1.fna.fbcdn.net/v/t42.9040-2/70735550_2344054849169992_7559830215547944960_n.mp4?_nc_cat=100&ccb=1-7&_nc_sid=55d0d3&efg=eyJybHIiOjM4OCwicmxhIjo1MTIsInZlbmNvZGVfdGFnIjoic3ZlX3NkIiwidmlkZW9faWQiOjQ4OTQ1MDExODUzNjIyN30%3D&_nc_ohc=X5AWysG6ZVMQ7kNvgGEJlCk&rl=388&vabr=216&_nc_ht=video.fdel42-1.fna&edm=AGo2L-IEAAAA&oh=00_AYD9upMxbGzjL5dX0U5wnsjY_zB6H2w9ldEywVM4dp9ymw&oe=66454585"/>
+            </video>
+            <div className="text-DH2 desktop:w-[40%] mt-8 desktop:mt-0 w-[90%] text-center">
+                Magicka has been a gateway for women led enterprises, we see women changing the world scenario in economic welfare and social aspects through their inner strengths and industrial capabilities.
+            </div>
+          </div>
+        </div>
+
         <PhotoLibrary />
+        <img className="mt-8" src={home_footer.src} alt="footer-banner"/>
       </div>
       {/* <Blog /> */}
     </div>

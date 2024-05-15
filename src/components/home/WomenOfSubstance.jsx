@@ -3,10 +3,10 @@ import Link from "next/link";
 const WomenOfSubstance = () => {
     return (
         <div className="z-10 relative desktop:px-[10%] desktop:text-white px-4 py-[4%]">
-            <div className="text-center text-[2.25rem] mb-8 font-semibold">
+            <div className="text-center text-[2.25rem] font-andora mb-8 font-semibold">
                 Women Of Substance
             </div>
-            <div className="flex flex-col desktop:flex-row items-center desktop:justify-evenly gap-2">
+            <div className="flex flex-col desktop:flex-row font-lato items-center desktop:justify-evenly gap-2">
                 <Link href="/article/jewels-by-priyanka">
                     <div className="w-[276px] desktop:border-none desktop:pb-0 desktop:mb-0 border-b-[1px] border-grey_light pb-6 mb-6 text-center">
                         <img className="w-[276px] h-[276px] rounded-tl-[25px] rounded-br-[25px]" src="https://magicka.in/wp-content/uploads/2023/01/11051973_821694974581405_6632120897211123443_o-e1672900031218-600x446.jpg" alt="img" />

@@ -17,15 +17,15 @@ const BaseLayout = ({ children }: any) => {
                 src="https://magicka.in/wp-content/uploads/2022/05/m_PNG_White-2048x819.png"
                 alt="logo-footer"
               />
-              <p>
+              <p className="font-lato">
                 Behind the word mountains, far from the countries Vokalia and
                 Consonantia, there live the blind texts they live
               </p>
             </div>
             <div className="desktop:col-span-1 col-span-3 py-4">
-              <p className="text-DT1 text-[#81685B]">Complete Range</p>
+              <p className="text-DT1 font-andora text-[#81685B]">Complete Range</p>
               <div className="flex py-6 px-4 flex-wrap">
-                <div className="w-[50%] h-[50px]">
+                <div className="w-[50%] font-lato h-[50px]">
                   <Link href="/">Home</Link>
                 </div>
                 <div className="w-[50%] h-[50px]">
@@ -36,14 +36,14 @@ const BaseLayout = ({ children }: any) => {
                 {/* <div className="w-[50%] h-[50px]">Contact</div> */}
               </div>
             </div>
-            <div className="desktop:col-span-1 col-span-3 py-4">
+            <div className="desktop:col-span-1 font-lato col-span-3 py-4">
               <div className="mb-4">
-              <p className="text-DT1 text-[#81685B]">Contact Us</p>
+              <p className="text-DT1 font-andora text-[#81685B]">Contact Us</p>
 
                 Magicka.in<br/> Connect@Magicka.in <br/>Delhi Office: H-11 B, Vijay Nagar,<br/>
                 Delhi 110009, India.
               </div>
-              <p className="text-DT1 text-[#81685B]">Subscribe Now</p>
+              <p className="text-DT1 font-andora text-[#81685B]">Subscribe Now</p>
               <div className="text-DB1 py-2 ">
                 Don’t miss our future updates!
                 <br /> Get Subscribed Today!

@@ -14,7 +14,7 @@ const Search = () => {
 
   return (
     <div className="mt-[100px] mb-[30px] mx-[10%]">
-      <div className="text-DH1">
+      <div className="text-DH1 font-andora">
         Result for{" "}
         <i>
           <q>{searched_query}</q>
@@ -28,11 +28,11 @@ const Search = () => {
                 className="object-cover rounded-xl w-full h-[350px]"
                 src={item.prod_images[0].src}
               />
-              <div className="text-DT2 my-2">{item.brand_name}</div>
+              <div className="font-lato text-DT2 my-2">{item.brand_name}</div>
             </div>
           </Link>
         ))}
-        {searched_data.length===0 && <div className="text-center text-DT2 mt-4 ">No Result Found! <Link className="underline text-blue" href={'/'}>Click here to go Back</Link></div>}
+        {searched_data.length===0 && <div className="text-center font-lato text-DT2 mt-4 ">No Result Found! <Link className="underline text-blue" href={'/'}>Click here to go Back</Link></div>}
       </div>
     </div>
   );

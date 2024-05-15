@@ -1,7 +1,14 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+@import url('https://fonts.googleapis.com/css2?family=Andora+Modern+Serif:wght@400;500;600;700&display=swap');
 
+@font-face {
+  font-family: 'Andora Modern Serif';
+  src: url('/fonts/AndoraModernSerif.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
 :root {
   width: 100vw;
 }

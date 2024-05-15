@@ -10,7 +10,7 @@ const Header = () => {
                     <img className="h-full" src={logo.src} alt="magicka-logo"/>
                 </Link>
             </div>
-            <div className="flex gap-8 text-DT2 justify-between">
+            <div className="flex gap-8 text-DT2 font-lato justify-between">
                 <Link href="https://www.magicka.in" target="_blank">
                     <p>About Us</p>
                 </Link>
