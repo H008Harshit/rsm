@@ -5,7 +5,7 @@ const Article = () => {
     <div className="desktop:mx-[10%] mx-4 my-[100px]">
       <div className=" flex-col desktop:flex-row flex justify-around  items-center">
         <img
-          src="https://magicka.in/wp-content/uploads/2023/01/Top-50-Brands-Website-Priyanka-2048x1189.png"
+          src="https://magicka.in/wp-content/uploads/2023/01/11051973_821694974581405_6632120897211123443_o-e1672900031218-600x446.jpg"
           alt="img"
           className="desktop:w-[600px] w-auto h-auto desktop:h-[350px]"
         />

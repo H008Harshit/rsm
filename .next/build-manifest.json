@@ -5,8 +5,8 @@
   "devFiles": [],
   "ampDevFiles": [],
   "lowPriorityFiles": [
-    "static/GP4ISd0hZ65Zr7t9LGyYR/_buildManifest.js",
-    "static/GP4ISd0hZ65Zr7t9LGyYR/_ssgManifest.js"
+    "static/OIZJ1cD9othamPvMx0wvJ/_buildManifest.js",
+    "static/OIZJ1cD9othamPvMx0wvJ/_ssgManifest.js"
   ],
   "rootMainFiles": [],
   "pages": {
@@ -46,13 +46,13 @@
       "static/chunks/webpack-ee7e63bc15b31913.js",
       "static/chunks/framework-ecc4130bc7a58a64.js",
       "static/chunks/main-48a2be0192cdda09.js",
-      "static/chunks/pages/article/jewels-by-priyanka-7d7fe3e88931828c.js"
+      "static/chunks/pages/article/jewels-by-priyanka-419143a767470b53.js"
     ],
     "/article/nazaakat-chic": [
       "static/chunks/webpack-ee7e63bc15b31913.js",
       "static/chunks/framework-ecc4130bc7a58a64.js",
       "static/chunks/main-48a2be0192cdda09.js",
-      "static/chunks/pages/article/nazaakat-chic-13897913f6dd570f.js"
+      "static/chunks/pages/article/nazaakat-chic-2fd3ae48fb5a0f37.js"
     ],
     "/category/[search_query]": [
       "static/chunks/webpack-ee7e63bc15b31913.js",

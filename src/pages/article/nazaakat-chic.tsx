@@ -5,7 +5,7 @@ const NazaakatChic = () => {
     <div className="desktop:mx-[10%] mx-4 my-[100px]">
       <div className="flex-col desktop:flex-row flex justify-around  items-center">
         <img
-          src="https://magicka.in/wp-content/uploads/2023/01/Top-50-Brands-Header-Website-Nita-copy-2048x1219.png"
+          src="https://magicka.in/wp-content/uploads/2023/01/Blue-Logo-Nazaakat-Chic-600x450.jpg"
           alt="img"
           className="desktop:w-[600px] w-auto h-auto desktop:h-[350px]"
         />
