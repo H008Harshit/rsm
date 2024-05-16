@@ -66,7 +66,7 @@ export default function Home() {
           </video>
           <div className="absolute desktop:mx-[10%] flex flex-col desktop:flex-row text-white items-center justify-around z-10 top-[10%] desktop:top-[30%]">
             <video controls >
-              <source src="https://video.fdel42-1.fna.fbcdn.net/v/t42.9040-2/70735550_2344054849169992_7559830215547944960_n.mp4?_nc_cat=100&ccb=1-7&_nc_sid=55d0d3&efg=eyJybHIiOjM4OCwicmxhIjo1MTIsInZlbmNvZGVfdGFnIjoic3ZlX3NkIiwidmlkZW9faWQiOjQ4OTQ1MDExODUzNjIyN30%3D&_nc_ohc=X5AWysG6ZVMQ7kNvgGEJlCk&rl=388&vabr=216&_nc_ht=video.fdel42-1.fna&edm=AGo2L-IEAAAA&oh=00_AYD9upMxbGzjL5dX0U5wnsjY_zB6H2w9ldEywVM4dp9ymw&oe=66454585"/>
+              <source src="https://video.xx.fbcdn.net/v/t42.9040-2/70735550_2344054849169992_7559830215547944960_n.mp4?_nc_cat=100&ccb=1-7&_nc_sid=55d0d3&efg=eyJybHIiOjM4OCwicmxhIjo1MTIsInZlbmNvZGVfdGFnIjoic3ZlX3NkIiwidmlkZW9faWQiOjQ4OTQ1MDExODUzNjIyN30%3D&_nc_ohc=X5AWysG6ZVMQ7kNvgFxrl8p&rl=388&vabr=216&_nc_ht=video.fdel42-1.fna&edm=AGo2L-IEAAAA&oh=00_AYBLyMQly96fxuteTITU-3ZmkLyFkipz6dQ02IAXONq6Zw&oe=6645B605"/>
             </video>
             <div className="text-DH2 desktop:w-[40%] mt-8 desktop:mt-0 w-[90%] text-center">
                 Magicka has been a gateway for women led enterprises, we see women changing the world scenario in economic welfare and social aspects through their inner strengths and industrial capabilities.
