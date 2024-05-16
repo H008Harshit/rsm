@@ -4,7 +4,6 @@ import BrandFocus from "@/components/home/BrandFocus";
 import MiniBrandFocus from "@/components/home/MiniBrandFocus";
 import Categories from "@/components/home/Categories";
 import WomenOfSubstance from "@/components/home/WomenOfSubstance";
-import bg from "../../public/assets/images/entrepreneur.png";
 import home_screen from "../../public/assets/images/home_screen_banner.png"
 import PhotoLibrary from "@/components/home/PhotoLibrary";
 import { useState } from "react";
@@ -53,12 +52,10 @@ export default function Home() {
       <img src={home_screen.src} alt="home-screen-banner"/>
       <MiniBrandFocus />
       <Categories />
+      <img className="mt-8" src={home_footer.src} alt="footer-banner"/>
+
       <div className="relative">
-        <img
-          className="hidden desktop:block desktop:h-[80vh] top-790 absolute object-cover w-full"
-          src={bg.src}
-          alt="image"
-        />
+        
         <WomenOfSubstance />
         <div className="relative">
           <video className="w-full  object-cover h-[60vh]"  autoPlay loop>
@@ -77,15 +74,14 @@ export default function Home() {
         <PhotoLibrary />
         <div className="desktop:px-[10%] bg-[#fff8f8] mt-[5%] py-[5%] px-4 grid-cols-2 grid gap-10">
           <img className="desktop:col-span-1 col-span-2 h-auto mx-auto w-[80%]" src={deen.src} alt="image"/>  
-          <div className="desktop:col-span-1 text-mg_primary col-span-2 mx-auto desktop:mx-0 text-DH1 w-[70%] mt-2 desktop:mt-8 text-center font-andora">Deendayal Antyodaya Yojana-National Urban Livelihoods Mission (DAY-NULM)</div>
+          <div className="desktop:col-span-1 text-mg_primary col-span-2 mx-auto desktop:mx-0 text-DH1 w-[70%] mt-2 desktop:mt-8 text-center font-andora">SHGs powered by <br/> NULM</div>
           <div className="col-span-2 text-DT2 text-center text-grey_dark w-[80%] mx-auto font-lato">
-            To reduce poverty and vulnerability of the urban poor households by enabling them to access gainful self employment and skilled wage employment opportunities,resulting in an appreciable improvement in their livelihoods on a sustainable basis,through building strong grassroots level institutions of the poor.The mission would aim at providing shelters equipped with essential services to the urban homeless in a phased manner. In addition,the mission would also address livelihood concerns of the urban street vendors by facilitating access to suitable spaces,institutional credit,social security and skills to the urban street vendors for accessing emerging market opportunities.
+            To reduce poverty and vulnerability of the urban poor households by enabling them to access gainful self employment and skilled wage employment opportunities,resulting in an appreciable improvement in their livelihoods on a sustainable basis,through building strong grassroots level institutions of the poor. The mission would aim at providing shelters equipped with essential services to the urban homeless in a phased manner.
             <Link href="https://nulm.gov.in/">
               <div className="rounded-lg mt-4  w-fit mx-auto p-4 border-[1px] border-mg_primary text-mg_primary">Read More</div>
             </Link>
           </div>
         </div>
-        <img className="mt-8" src={home_footer.src} alt="footer-banner"/>
       </div>
       {/* <Blog /> */}
     </div>
