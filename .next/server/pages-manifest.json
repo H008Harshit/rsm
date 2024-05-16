@@ -1,6 +1,1 @@
-{
-  "/_app": "pages/_app.js",
-  "/_error": "pages/_error.js",
-  "/_document": "pages/_document.js",
-  "/": "pages/index.js"
-}
+{"/_app":"pages/_app.js","/_document":"pages/_document.js","/[listing]/detail":"pages/[listing]/detail.html","/article/jewels-by-priyanka":"pages/article/jewels-by-priyanka.html","/curated-brands/[brand]":"pages/curated-brands/[brand].html","/search/[search_query]":"pages/search/[search_query].html","/":"pages/index.html","/category/[search_query]":"pages/category/[search_query].html","/article/nazaakat-chic":"pages/article/nazaakat-chic.html","/_error":"pages/_error.js","/404":"pages/404.html"}
